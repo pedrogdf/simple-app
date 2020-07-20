@@ -20,9 +20,11 @@ public class SpringFoxConfig {
 	
 	 	@Bean
 		public Docket api() {
-			return new Docket(DocumentationType.SWAGGER_2).select()
+			return new Docket(DocumentationType.OAS_30)
+					.select()
 					//Restrict the SpringFox Swagger generator to only package "br.com.pedrogdf.simpleRestful.service"
 					.apis(RequestHandlerSelectors.basePackage("br.com.pedrogdf.simpleRestful.service"))
-					.paths(PathSelectors.any()).build();
+					.paths(PathSelectors.any())
+					.build();
 		}
 }
