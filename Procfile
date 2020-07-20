@@ -1,1 +1,1 @@
-web: ./mvnw spring-boot:run
+web: java -jar simpleRestful/target/simpleRestful*.jar
