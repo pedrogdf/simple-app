@@ -1,0 +1,8 @@
+{
+  "name": "simple-ionic",
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
+  "type": "angular"
+}
