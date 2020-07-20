@@ -1,4 +1,6 @@
 ### Introduction
+A Heroku app version of this project is deployed at: https://simple-app-pedrogdf.herokuapp.com
+
 This application will run npm on the simple-ionic project generating
 the static Angular/Ionic pages in simpleRestful resource folder.
 
