@@ -1,5 +1,6 @@
 ### Introduction
 A Heroku app version of this project is deployed at: https://simple-app-pedrogdf.herokuapp.com
+API at: https://simple-app-pedrogdf.herokuapp.com/swagger-ui
 
 This application will run npm on the simple-ionic project generating
 the static Angular/Ionic pages in simpleRestful resource folder.

@@ -1,5 +1,6 @@
 package br.com.pedrogdf.simpleRestful;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -11,6 +12,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 /**
  * SpringFox configuration to generate automatically the swagger of the API
+ * 
  * @author pedro
  *
  */
@@ -18,13 +20,12 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @EnableSwagger2
 public class SpringFoxConfig {
 	
-	 	@Bean
-		public Docket api() {
-			return new Docket(DocumentationType.OAS_30)
-					.select()
-					//Restrict the SpringFox Swagger generator to only package "br.com.pedrogdf.simpleRestful.service"
-					.apis(RequestHandlerSelectors.basePackage("br.com.pedrogdf.simpleRestful.service"))
-					.paths(PathSelectors.any())
-					.build();
-		}
+	@Bean
+	public Docket api() {
+		return new Docket(DocumentationType.OAS_30).select()
+				// Restrict the SpringFox Swagger generator to only package
+				// "br.com.pedrogdf.simpleRestful.service"
+				.apis(RequestHandlerSelectors.basePackage("br.com.pedrogdf.simpleRestful.service"))
+				.paths(PathSelectors.any()).build();
+	}
 }
